@@ -1,5 +1,6 @@
 "use client"
 
+import { ChatButton } from "@/components/ChatButton";
 import { Button } from "@/components/ui/button"
 import {
   Dialog,
@@ -16,7 +17,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-4">
       <h1>NextJS AI Chat</h1>
-      
+      <ChatButton />
     </main>
   );
 }
