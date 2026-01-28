@@ -1,6 +1,8 @@
 "use client"
 
 import * as React from "react"
+import * as z from "zod";
+import { zodResolver } from "@hookform/resolvers/zod"
 import { Send } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
