@@ -12,7 +12,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 import { cn } from "@/lib/utils"
-import Chat from "@/components/Chat"
+import Chat from "./Chat"
 
 interface ChatButtonProps extends React.ComponentProps<typeof Button> {
   label?: string
