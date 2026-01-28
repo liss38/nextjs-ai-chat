@@ -12,7 +12,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 import { cn } from "@/lib/utils"
-import Chat from "./Chat"
+import Chat from "@/components/Chat"
 
 interface ChatButtonProps extends React.ComponentProps<typeof Button> {
   label?: string
@@ -39,7 +39,7 @@ function ChatButton({
           <span className="font-medium">{children || label}</span>
         </Button>
       </DialogTrigger>
-      
+
       <DialogContent className="max-w-2xl h-[80vh] flex flex-col p-0">
         <DialogHeader className="px-6 pt-6 pb-4">
           <DialogTitle>AI Chat</DialogTitle>
