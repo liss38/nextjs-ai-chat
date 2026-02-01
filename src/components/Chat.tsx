@@ -42,7 +42,14 @@ const Chat = () => {
             key={message.id}
             className={cn("flex", message.role === "user" ? "justify-end" : "justify-start")}
           >
-            <span className="">
+            <span
+              className={cn(
+                "py-2 px-4 rounded-lg",
+                message.role === "user"
+                  ? "bg-secondary text-primary rounded-tr-none"
+                  : "bg-primary text-secondary rounded-tl-none"
+              )}
+            >
               {message.parts.find((part): part is { type: 'text'; text: string } => part.type === 'text')?.text ?? ''}
             </span>
           </div>
